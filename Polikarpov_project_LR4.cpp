@@ -64,6 +64,7 @@ void Task4(int X, int A) {
 
 int main() {
     int choice;
+    setlocale(LC_ALL, "rus");
     do {
         cout << "\nМеню:" << endl;
         cout << "1. Ввести натуральное число X" << endl;
