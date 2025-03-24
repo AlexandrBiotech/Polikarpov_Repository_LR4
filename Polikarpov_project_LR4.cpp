@@ -4,7 +4,7 @@ using namespace std;
 int X = 0;
 int A = 0;
 
-void Task1() {
+int Task1() {
     int X;
     cout << "Введите натуральное число X: ";
     cin >> X;
