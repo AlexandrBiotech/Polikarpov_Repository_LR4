@@ -58,7 +58,7 @@ int main() {
                 Task3();
                 break;
             case 4:
-                Task4();
+                Task4(X, A);
                 break;
             case 0:
                 cout << "Выход из программы." << endl;
