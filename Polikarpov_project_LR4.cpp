@@ -5,7 +5,10 @@ int X = 0;
 int A = 0;
 
 void Task1() {
-    // Ввести натуральное число X
+    int X;
+    cout << "Введите натуральное число X: ";
+    cin >> X;
+    return X;
 }
 
 void Task2() {
