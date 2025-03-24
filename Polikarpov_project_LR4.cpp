@@ -16,8 +16,23 @@ void Task3() {
     // Проверить отсутствие цифры A в числе X
 }
 
-void Task4() {
-    // Проверить, встречается ли A более двух раз
+void Task4(int X, int A) {
+    if (X == 0) {
+        cout << "Ошибка! Сначала введите число X (пункт 1)" << endl;
+        return;
+    }
+
+    int count = 0;
+    int temp = X;
+    while (temp != 0) {
+        if (temp % 10 == A) {
+            count++;
+        }
+        temp /= 10;
+    }
+
+    cout << "Цифра " << A << " встречается " << count << " раз(а)" << endl;
+    cout << "Встречается более двух раз: " << (count > 2 ? "ДА" : "НЕТ") << endl;
 }
 
 int main() {
