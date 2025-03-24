@@ -14,8 +14,13 @@ void Task1(int& X) {
 }
 
 
-void Task2() {
-    // Ввести цифру A (0-9)
+void Task2(int& A) {
+    cout << "Введите цифру A (0-9): ";
+    cin >> A;
+    while (A < 0 || A > 9) {
+        cout << "Ошибка! Введите цифру (0-9): ";
+        cin >> A;
+    }
 }
 
 void Task3(int X, int A) {
