@@ -18,8 +18,24 @@ void Task2() {
     // Ввести цифру A (0-9)
 }
 
-void Task3() {
-    // Проверить отсутствие цифры A в числе X
+void Task3(int X, int A) {
+    if (X == 0) {
+        cout << "Ошибка! Сначала введите число X (пункт 1)" << endl;
+        return;
+    }
+
+    bool exists = false;
+    int temp = X;
+    while (temp != 0) {
+        if (temp % 10 == A) {
+            exists = true;
+            break;
+        }
+        temp /= 10;
+    }
+
+    cout << "Цифра " << A << (exists ? " ПРИСУТСТВУЕТ" : " ОТСУТСТВУЕТ")
+        << " в числе " << X << endl;
 }
 
 void Task4() {
